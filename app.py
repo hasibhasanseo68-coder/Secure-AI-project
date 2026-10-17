@@ -230,7 +230,7 @@ with tab_route:
         ors_key = os.getenv("OPENROUTESERVICE_API_KEY")
 
     if not ors_key:
-        st.info("To enable real walking routes, add a free OpenRouteService API key to `.streamlit/secrets.toml`. See README. Until then, the route planner will not invent route lines or risk rankings.")
+        st.info("To enable real walking routes, add a free OpenRouteService API key to `secrets.toml`. See README. Until then, the route planner will not invent route lines or risk rankings.")
     submitted = st.button("Find and compare routes", type="primary", use_container_width=True)
 
     if submitted:
